@@ -35,6 +35,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+      # download Node.js
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+
       # Jest code test
       - name: Running Test
         run: npm run test
