@@ -34,3 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Jest code test
+      - name: Running Test
+        run: npm run test
