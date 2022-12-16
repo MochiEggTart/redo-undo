@@ -99,4 +99,4 @@ class MochiUndoRedo {
     }
 }
 
-export { MochiUndoRedo };
+export { MochiUndoRedo, Present };
