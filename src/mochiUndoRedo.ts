@@ -21,7 +21,8 @@ class MochiUndoRedo {
 
     //取得步驟數量
     get count() {
-        return this.past.length;
+        const dataList = this.getDataList();
+        return dataList.length;
     }
 
     //取得目前步驟資料
