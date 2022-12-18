@@ -1,5 +1,4 @@
 interface Present {
-    name: string,
     value: any,
     customData?: { [key: string]: any }
 }
@@ -11,7 +10,6 @@ class MochiUndoRedo {
 
     //目前紀錄
     private present: Present = {
-        name: "",
         value: null,
         customData: {}
     };
@@ -44,7 +42,13 @@ class MochiUndoRedo {
     }
 
     //寫入紀錄
-    add(data: Present) {
+    add(value: any, customData: { [key: string]: any } = {}) {
+
+        const data: Present = {
+            value,
+            customData
+        }
+
         this.past.push(this.present);
         this.present = data;
         this.future = [];
@@ -91,7 +95,6 @@ class MochiUndoRedo {
     clearAll() {
         this.past = [];
         this.present = {
-            name: "",
             value: null,
             customData: {}
         };
