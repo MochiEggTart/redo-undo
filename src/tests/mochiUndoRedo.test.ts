@@ -1,40 +1,25 @@
 import { MochiUndoRedo, Present } from "../mochiUndoRedo";
 
-
-
-
 test(`MochiUndoRedo Test`, () => {
     const mochiUndoRedo = new MochiUndoRedo();
-    const step1: Present = {
-        name: "Add One Step",
-        value: "One",
-        customData: {}
-    }
-    const step2: Present = {
-        name: "Add Two Step",
-        value: "Two",
-        customData: {}
-    }
-    const step3: Present = {
-        name: "Add Three Step",
-        value: "Three",
-        customData: {}
-    }
+    const step1 = "One";
+    const step2 = "Two";
+    const step3 = "Three";
     // Add Step1
     mochiUndoRedo.add(step1);
-    expect(step1).toBe(mochiUndoRedo.getData());
+    expect(step1).toBe(mochiUndoRedo.getData().value);
     // Add Step2
     mochiUndoRedo.add(step2);
-    expect(step2).toBe(mochiUndoRedo.getData());
+    expect(step2).toBe(mochiUndoRedo.getData().value);
     // Add Step3
     mochiUndoRedo.add(step3);
-    expect(step3).toBe(mochiUndoRedo.getData());
+    expect(step3).toBe(mochiUndoRedo.getData().value);
     // undo
     mochiUndoRedo.undo();
-    expect(step2).toBe(mochiUndoRedo.getData());
+    expect(step2).toBe(mochiUndoRedo.getData().value);
     // redo
     mochiUndoRedo.redo();
-    expect(step3).toBe(mochiUndoRedo.getData());
+    expect(step3).toBe(mochiUndoRedo.getData().value);
     // Get Count
     const allData = mochiUndoRedo.getDataList();
     expect(allData.length).toBe(mochiUndoRedo.count);
