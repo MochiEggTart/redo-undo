@@ -1,13 +1,15 @@
 {
   "name": "redo-undo.js",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/main.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/main.ts",
     "build": "tsc",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
