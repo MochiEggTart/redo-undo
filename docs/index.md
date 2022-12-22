@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: MochiRedoUndo
-  text: Vite & Vue powered static site generator.
-  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  text: 一款實現上一步、下一步的輕量級函式庫.
+  tagline: 簡單、快速、值得你嘗試!
   actions:
     - theme: brand
       text: Get Started
