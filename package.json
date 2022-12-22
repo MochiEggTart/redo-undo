@@ -3,6 +3,7 @@
   "version": "1.0.0-beta",
   "description": "",
   "main": "index.js",
+  "files": ["dist"],
   "scripts": {
     "start": "ts-node src/main.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/main.ts",
