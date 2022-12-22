@@ -53,6 +53,5 @@ test(`MochiUndoRedo Test`, () => {
         customData: {}
     }])).toBe(JSON.stringify(mochiUndoRedo.getDataList()))
     // 清空後查詢數量
-    expect(0).toBe(mochiUndoRedo.count);
-
+    expect(1).toBe(mochiUndoRedo.count);
 })
