@@ -8,17 +8,15 @@ export default defineConfig({
   base: '/redo-undo/',
   themeConfig: {
     nav: [
-      { text: '導引', link: '/description' },
-      { text: '展示', link: '/working' }
-      /*
-      ,
+      { text: '導引', link: '/guide' },
+      { text: '展示', link: '/demo' },
       {
         text: '語系',
         items: [
           { text: '繁體中文', link: '/item-1' }
         ],
       }
-      */
+
     ],
     sidebar: [
       {
@@ -26,8 +24,8 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: '甚麼是redo-undo?', link: '/description' },
-          { text: '入門', link: '/working' },
-          { text: '展示', link: '/working' }
+          { text: '入門', link: '/getting-started' },
+          { text: '展示', link: '/demo' }
         ]
       },
       {
@@ -53,7 +51,7 @@ export default defineConfig({
         text: '看看我們其他的開源專案',
         collapsible: true,
         items: [
-          { text: 'redo-undo', link: 'https://github.com/MochiEggTart/redo-undo' }
+          { text: 'redo-undo', link: '/redo-undo' }
         ]
       },
     ],
