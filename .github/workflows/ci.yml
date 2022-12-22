@@ -46,14 +46,3 @@ jobs:
       # Jest code test
       - name: Running Test
         run: npm run test
-
-      # Document
-      - name: Building Docs
-        run: npm run docs:build
-
-      # Deploy Document
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
