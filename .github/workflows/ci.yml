@@ -47,28 +47,13 @@ jobs:
       - name: Running Test
         run: npm run test
 
-      #!/usr/bin/env sh
+      # Document
+      - name: Building Docs
+        run: npm run docs:build
 
-      # abort on errors
-      set -e
-
-      # build
-      npm run docs:build
-
-      # navigate into the build output directory
-      cd docs/.vitepress/dist
-
-      # if you are deploying to a custom domain
-      # echo 'www.example.com' > CNAME
-
-      git init
-      git add -A
-      git commit -m 'deploy'
-
-      # if you are deploying to https://<USERNAME>.github.io
-      # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-      # if you are deploying to https://<USERNAME>.github.io/<REPO>
-      git push -f git@github.com:mochieggtart/redo-undo.git master:gh-pages
-
-      cd -
+      # Deploy Document
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
