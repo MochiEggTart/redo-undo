@@ -46,3 +46,7 @@ jobs:
       # Jest code test
       - name: Running Test
         run: npm run test
+
+      # Document
+      - name: Building Docs
+        run: npm run docs:build
