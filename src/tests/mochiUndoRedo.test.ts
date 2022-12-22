@@ -5,28 +5,54 @@ test(`MochiUndoRedo Test`, () => {
     const step1 = "One";
     const step2 = "Two";
     const step3 = "Three";
-    // Add Step1
+
+    // Get All Data
+    const ans = [{
+        value: null,
+        customData: {}
+    }, {
+        value: step1,
+        customData: {}
+    }, {
+        value: step2,
+        customData: {}
+    }, {
+        value: step3,
+        customData: {}
+    }]
+
+
+    // 新增一個步驟一
     mochiUndoRedo.add(step1);
     expect(step1).toBe(mochiUndoRedo.getData().value);
-    // Add Step2
+    // 新增一個步驟二
     mochiUndoRedo.add(step2);
     expect(step2).toBe(mochiUndoRedo.getData().value);
-    // Add Step3
+    // 新增一個步驟三
     mochiUndoRedo.add(step3);
     expect(step3).toBe(mochiUndoRedo.getData().value);
-    // undo
+    // 返回上一步
     mochiUndoRedo.undo();
+    // 判斷資料值是否正確
     expect(step2).toBe(mochiUndoRedo.getData().value);
-    // redo
+    // 判斷排序是否正確
+    expect(JSON.stringify(ans)).toBe(JSON.stringify(mochiUndoRedo.getDataList()))
+    // 返回下一步
     mochiUndoRedo.redo();
+    // 判斷資料值是否正確
     expect(step3).toBe(mochiUndoRedo.getData().value);
-    // Get Count
+    // 判斷Count與資料總數是否一致
     const allData = mochiUndoRedo.getDataList();
     expect(allData.length).toBe(mochiUndoRedo.count);
-    // Get All Data
-    // expect([step1, step2, step3]).toBe(mochiUndoRedo.getDataList())
-    // Get All Data
-    // mochiUndoRedo.clearAll();
-    // expect([]).toBe(mochiUndoRedo.getDataList())
+    // 判斷資料排序是否正確
+    expect(JSON.stringify(ans)).toBe(JSON.stringify(mochiUndoRedo.getDataList()))
+    // 清空所有資料
+    mochiUndoRedo.clearAll();
+    expect(JSON.stringify([{
+        value: null,
+        customData: {}
+    }])).toBe(JSON.stringify(mochiUndoRedo.getDataList()))
+    // 清空後查詢數量
+    expect(0).toBe(mochiUndoRedo.count);
 
 })

@@ -1,6 +1,6 @@
 {
   "name": "redo-undo.js",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
     "build": "tsc",
     "test": "jest --coverage",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs"
+    "docs:build": "vitepress build docs",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
