@@ -50,5 +50,4 @@ console.log(mochiUndoRedo.getData());
 //    value: 4,
 //    customData: {}
 // }
-
 ```

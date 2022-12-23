@@ -18,5 +18,5 @@ mochiUndoRedo.add(2,{name: "add 2"});
 mochiUndoRedo.add(3);
 
 console.log(mochiUndoRedo.count);
-// 3
+// 4
 ```
