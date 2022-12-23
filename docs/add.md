@@ -40,6 +40,9 @@ mochiUndoRedo.add(3);
 
 console.log(mochiUndoRedo.getDataList());
 // [{
+//    value: null,
+//    customData: {}
+// },{
 //    value: 1,
 //    customData: {}
 // },{
