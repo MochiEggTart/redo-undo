@@ -5,6 +5,9 @@ import{P as n}from"./chunks/paramsTable.c7d46ed3.js";import{o as l,c as e,a as o
 <span class="line"></span>
 <span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(mochiUndoRedo</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">getDataList</span><span style="color:#A6ACCD;">())</span><span style="color:#89DDFF;">;</span></span>
 <span class="line"><span style="color:#676E95;font-style:italic;">// [{</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//    value: null,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//    customData: {}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// },{</span></span>
 <span class="line"><span style="color:#676E95;font-style:italic;">//    value: 1,</span></span>
 <span class="line"><span style="color:#676E95;font-style:italic;">//    customData: {}</span></span>
 <span class="line"><span style="color:#676E95;font-style:italic;">// },{</span></span>

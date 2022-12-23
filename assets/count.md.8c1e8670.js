@@ -4,5 +4,5 @@ import{_ as s,o as a,c as n,b as o}from"./app.f02a92d3.js";const C=JSON.parse('{
 <span class="line"><span style="color:#A6ACCD;">mochiUndoRedo</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">add</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">3</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(mochiUndoRedo</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">count)</span><span style="color:#89DDFF;">;</span></span>
-<span class="line"><span style="color:#676E95;font-style:italic;">// 3</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 4</span></span>
 <span class="line"></span></code></pre></div>`,7),p=[e];function t(c,r,i,d,D,y){return a(),n("div",null,p)}const h=s(l,[["render",t]]);export{C as __pageData,h as default};
