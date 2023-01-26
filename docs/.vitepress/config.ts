@@ -9,8 +9,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '導引', link: '/description' },
-      { text: '展示', link: '/working' }
       /*
+      { text: '展示', link: '/working' }
       ,
       {
         text: '語系',
@@ -26,8 +26,8 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: '甚麼是redo-undo?', link: '/description' },
-          { text: '入門', link: '/working' },
-          { text: '展示', link: '/working' }
+          { text: '安裝與用法', link: '/introduction' },
+          /*{ text: '用法', link: '/usage' }*/
         ]
       },
       {
