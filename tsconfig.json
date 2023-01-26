@@ -10,7 +10,8 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "./src"
+    "./src/index.ts",
+    "./src/mochiUndoRedo.ts"
   ],
   "exclude": [
     "node_modules",

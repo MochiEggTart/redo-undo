@@ -1,6 +1,6 @@
 {
   "name": "redo-undo.js",
-  "version": "1.0.9-beta",
+  "version": "1.0.10-beta",
   "description": "",
   "main": "./dist/index.js",
   "files": ["dist"],
