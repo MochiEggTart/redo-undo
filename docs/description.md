@@ -4,5 +4,6 @@
 
 我們採用ES6 Class 與 TypeScript，來撰寫我們的代碼
 
-聯絡我們#
-如果您有任何需求或建議，歡迎至XXXX
+聯絡我們: mochieggtart20221221@gmail.com
+
+如果您有任何需求或建議，歡迎至[issues](https://github.com/MochiEggTart/redo-undo/issues)與我們互動
